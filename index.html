@@ -11,9 +11,17 @@
 <body>
   <header>
     <div class="container">
-      <a href="#" class="logo">
-        <img src="logo.png" alt="EDT Selector Logo">
-      </a>
+      <div class="logo-container">
+        <a href="#" class="logo">
+          <img src="logo.png" alt="EDT Selector Logo">
+        </a>
+
+        <div class="hamburgerIcon" onclick="toggleHamburger(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+      </div>
 
       <nav class="nav-links">
         <a href="#product">Produkt</a>
@@ -96,7 +104,6 @@
         <li>Spårning och historik</li>
         <li>Fungerar fristående eller med integrationer</li>
         <li>Fungerar även förträffligt för andra, t.ex. interna, beställningsprocesser</li>
-
       </ul>
     </div>
   </section>
@@ -104,10 +111,18 @@
   <section id="contact">
     <div class="container">
       <h3>Kontakta oss</h3>
-      <p>Redo att skala säljet, öka försäljningen och kundnöjdheten? Kontakta oss för en demo eller för att diskutera
-        era behov</p>
-      <p><strong>Email:</strong> magnus.glader@epicdreamtech.se</p>
-      <p><strong>Telefon:</strong> 070-5607027</p>
+      <p>
+        Redo att skala säljet, öka försäljningen och kundnöjdheten? Kontakta oss för en demo eller för att diskutera era
+        behov
+      </p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:magnus.glader@epicdreamtech.com">magnus.glader@epicdreamtech.com</a>
+      </p>
+      <p>
+        <strong>Telefon:</strong>
+        <a href="tel:0705607027">070-5607027</a>
+      </p>
     </div>
   </section>
 
@@ -117,5 +132,13 @@
     </div>
   </footer>
 </body>
+
+<script>
+  function toggleHamburger(el) {
+    el.classList.toggle('toggle');
+    document.querySelectorAll('.nav-links')[0].classList.toggle('show');
+  }
+
+</script>
 
 </html>
