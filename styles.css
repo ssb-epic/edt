@@ -33,6 +33,8 @@ body {
   gap: 1rem;
 }
 
+
+/*
 @media (max-width: 768px) {
   .nav-links {
     flex-direction: column;
@@ -51,12 +53,12 @@ body {
     flex-direction: column;
     align-items: flex-start;
   }
-}
+} */
 
 header {
   background-color: #0c2340;
   color: white;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 header h1 {
