@@ -27,6 +27,10 @@ body {
   margin: 0 auto;
 }
 
+.translation-container {
+  justify-content: flex-end !important;
+}
+
 .nav-links {
   display: flex;
   gap: 1rem;
